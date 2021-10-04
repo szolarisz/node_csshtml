@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="./forma.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mb-2"></div>
+      <button id="fetch-phones" class="btn btn-primary">
+        Telefonok lekérdezése
+      </button>
+      <div id="phone-list-component"></div>
+      <form id="create-phone">
+        <label>
+          Név:
+          <input type="text" name="name" class="form-control" />
+        </label>
+        <label>
+          Márka:
+          <input type="text" name="brand" class="form-control" />
+        </label>
+        <button type="submit" class="btn btn-primary btn-sm">
+          +
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
