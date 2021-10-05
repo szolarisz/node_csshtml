@@ -12,6 +12,12 @@ const server = http.createServer(function (req, res) {
                 res.end(file);
             });
             break;
+            case req.url === '/udvozles.html' && req.method === 'GET':
+                fs.readFile('./views/udvozles.html', (err, file) => {
+                    res.setHeader('content-type', 'text/html');
+                    res.end(file);
+                });
+                break;    
         case req.url === '/forma.css' && req.method === 'GET':
             fs.readFile('./views/formas.css', (err, file) => {
                 res.setHeader('content-type', 'text/css');
